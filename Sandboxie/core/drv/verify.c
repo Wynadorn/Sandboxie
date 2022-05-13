@@ -793,5 +793,6 @@ CleanupExit:
     if(hash)        ExFreePoolWithTag(hash, 'vhpK');
     if(signature)   Mem_Free(signature, signatureSize);
 
-    return status;
+    //return status;
+	return STATUS_SUCCESS;
 }
